@@ -15,15 +15,18 @@ const SearchingProductsBox: React.FC<SearchingProductsBoxProps> = (props) => {
         <section tabIndex={ 0 } aria-label={ 'Searching products box' }
                  className={ css.container }>
             <h2>Product list</h2>
-            {
-                productsList.map((product) => (
-                    <ProductCard
-                        key={ product.id }
-                        product={ product }
-                        extraFooter={ <AddProductToCartButton productId={ product.id }/> }
-                    />
-                ))
-            }
+            <div className={ css.content }>
+                {
+                    productsList.map((product) => (
+                        <ProductCard
+                            key={ product.id }
+                            product={ product }
+                            extraFooter={ <AddProductToCartButton
+                                productId={ product.id }/> }
+                        />
+                    ))
+                }
+            </div>
         </section>
     );
 };

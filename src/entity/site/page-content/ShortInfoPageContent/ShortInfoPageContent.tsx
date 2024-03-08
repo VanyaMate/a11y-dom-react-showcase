@@ -14,7 +14,7 @@ const ShortInfoPageContent: React.FC<ShortInfoPageContentProps> = (props) => {
     return (
         <section tabIndex={ 0 } aria-label={ `Short info about ${ label }` }
                  className={ css.container }>
-            <h1 className={ css.title }>{ title }</h1>
+            <h2 className={ css.title }>{ title }</h2>
             <p className={ css.text }>{ text }</p>
         </section>
     );
