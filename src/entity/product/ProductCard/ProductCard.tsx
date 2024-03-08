@@ -21,7 +21,7 @@ const ProductCard: React.FC<ProductCardProps> = (props) => {
                 aria-label={ product.description }
                 className={ css.info }
             >
-                <h2>{ product.title }</h2>
+                <h3>{ product.title }</h3>
                 <p>{ product.description }</p>
             </div>
             <div
