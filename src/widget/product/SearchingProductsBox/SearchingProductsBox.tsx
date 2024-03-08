@@ -14,6 +14,7 @@ const SearchingProductsBox: React.FC<SearchingProductsBoxProps> = (props) => {
     return (
         <section tabIndex={ 0 } aria-label={ 'Searching products box' }
                  className={ css.container }>
+            <h2>Product list</h2>
             {
                 productsList.map((product) => (
                     <ProductCard
